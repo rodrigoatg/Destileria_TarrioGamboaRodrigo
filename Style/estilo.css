@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /*
+    background: rgb(255,245,98);
+    background: linear-gradient(180deg, rgba(255,245,98,1) 0%, rgba(63,195,129,1) 10%, rgba(125,233,255,1) 89%); 
+    */
+}
+
+
+body{
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.encabezado{
+    background-image: url("./media/background.webp");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+*/
+header{
+    background-image: url("../media/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.encabezado .encabezado__titulo{
+    font-weight: bolder;
+    text-shadow: rgb(36, 119, 36);
+    text-align: right;
+    font-size: 350%;
+    padding-top: 35px;
+    align-self: flex-end;
+    color: darkseagreen;
+}
+
+.encabezado__logo{
+    float: right;
+    vertical-align: bottom;
+    width: 7%;
+    margin: 10px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply; /*estas 2 lineas eliminan el fondo blanco*/
+}
+
+.encabezado__menu ul li {
+    list-style-type: none;
+    text-decoration: none;
+    /*text-decoration: underline;*/
+    color: lightgreen;
+    display: inline;
+    margin: 20px;
+}
+
+.encabezado__menu ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: floralwhite;
+}
+
+.encabezado__menu {
+    background-color: darkseagreen;
+}
+
+.subTitulo{
+    font-size: 100%;
+    padding-top: 20px;
+    align-self: flex-end;
+    font-weight: bold;
+    text-shadow: rgb(36, 119, 36);
+    text-align: center;
+    color: darkseagreen;
+    
+}
+
+.titulos{
+    font-weight: bold;
+}
+
+.linkinterno{
+    text-decoration: none;
+}
+
+
+/*HOME*/
+.idx__titulo{
+    text-align: center;
+}
+.idxproductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.idxpartners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.idxabout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.idxcontacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.idxproductos__slider .idxproductos__slider__fotos{
+    flex-wrap: nowrap;
+    align-self: center;
+}
+
+.idx__button{
+    flex-direction: row;
+    align-self: center;
+    text-decoration: none;
+    /*background-color: cadetblue;*/
+    
+}
+/*MAIN*/
+main{
+    margin-left: 15px;
+}
+
+
+/*PRODUCTOS*/
+.productosStatement p{
+    /*margin: 10% 20% 10% 20%;*/
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.productos{
+    display: flex;
+    flex-direction: row;
+}
+.productos .productos__producto{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px 10px 10px 10px ;
+    
+}
+.productos .productos__producto img{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+}
+ 
+.productos .productos__producto h2{
+    text-align: center;
+    color: green;
+}
+.productos .productos__producto img{
+    height: "300px"; /*height="auto"*/
+    object-fit: scale-down;
+}
+
+/*PARTNERS*/
+.partnerMain{
+    display: flex;
+    flex-direction: row;
+}
+
+.partnerMain .partnerIni{
+    align-items: center;
+}
+
+.partnerMain .partnerIni .partnerNombre{
+    text-align: center;
+    color: rgb(54, 77, 54) ;
+}
+
+.partnerMain .partnerExtra{
+    margin-top: 30px;
+    padding-left: 15px;
+}
+
+.partnerMain .partnerExtra .partnerInfo{
+    color: rgb(4, 22, 22);
+    
+}
+.partnerMain .partnerExtra .PartnerRedes{
+    flex-direction: row;
+}
+/*
+.partnerMain .partnerExtra{
+    
+}
+*/
+
+/*ABOUT*/
+.sobreLaEmpresa{
+    height: 400px;
+    margin: 10px 20px 10px 20px;
+}
+
+
+/*CONTACTO*/
+.formulario__botones{
+    align-items: center;
+}
+
+/*FOOTER*/
+.footer{
+    margin: 0;
+    padding: 0;
+    justify-self: self-end;
+    padding-left: 20px;
+    background-color: darkslategrey;
+    /*bottom: 0;*/
+    width: 100%;
+
+}
+
+.footer .footer__vinculos{
+    list-style-type: none;
+    /*text-decoration: rgb(95, 126, 41);*/
+    text-decoration: none;
+    color: floralwhite;
+    align-self: flex-end;
+}
+
+.footer .footer__vinculos a{
+    list-style-type: none;
+    /*text-decoration: rgb(95, 126, 41);*/
+    text-decoration: none;
+    color: floralwhite;
+}
+
+.footer .footer__info{
+    font-style: italic;
+    color: darkred;
+}
